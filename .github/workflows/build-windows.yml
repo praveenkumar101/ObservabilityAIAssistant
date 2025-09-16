@@ -26,10 +26,10 @@ jobs:
 
     - name: Build EXE with PyInstaller
       run: |
-        pyinstaller --onefile your_script.py
+        pyinstaller --onefile main.py
 
     - name: Upload EXE Artifact
       uses: actions/upload-artifact@v3
       with:
         name: windows-exe
-        path: dist/your_script.exe
+        path: dist/main.exe
